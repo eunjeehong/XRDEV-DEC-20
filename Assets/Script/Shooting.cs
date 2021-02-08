@@ -24,7 +24,6 @@ public class Shooting : MonoBehaviour
             shot.GetComponent<Rigidbody>().AddForce(shot.transform.forward*shootingForce);
 
             shotCounter.shotsFired++;
-
             shotCounter.ShotsFired();
 
             Destroy(shot, 3f);

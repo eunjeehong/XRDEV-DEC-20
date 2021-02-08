@@ -1,16 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 
 public class ShotCounter : MonoBehaviour
 {
     public Text descriptionText;
     public int shotsFired;
 
-   
-    // Update is called once per frame
+    // Start is called before the first frame update
     public void ShotsFired()
     {
         descriptionText.text = "Shots fired: " + shotsFired;
